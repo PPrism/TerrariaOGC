@@ -1,0 +1,126 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.7.34202.233
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TerrariaOGC", "TerrariaOGC\TerrariaOGC.csproj", "{1AFFDFE4-EAF5-4198-9367-E71F49A0E327}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FNA.NetFramework", "FNA\FNA.NetFramework.csproj", "{CE90D7D0-E9BC-42D3-8862-2E8EFA887D60}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Debug|x64 = Debug|x64
+		Debug|x86 = Debug|x86
+		Initial Release|Any CPU = Initial Release|Any CPU
+		Initial Release|x64 = Initial Release|x64
+		Initial Release|x86 = Initial Release|x86
+		Patched Release|Any CPU = Patched Release|Any CPU
+		Patched Release|x64 = Patched Release|x64
+		Patched Release|x86 = Patched Release|x86
+		Version 1.01 (1.1.2+)|Any CPU = Version 1.01 (1.1.2+)|Any CPU
+		Version 1.01 (1.1.2+)|x64 = Version 1.01 (1.1.2+)|x64
+		Version 1.01 (1.1.2+)|x86 = Version 1.01 (1.1.2+)|x86
+		Version 1.03 (1.2.1.2)|Any CPU = Version 1.03 (1.2.1.2)|Any CPU
+		Version 1.03 (1.2.1.2)|x64 = Version 1.03 (1.2.1.2)|x64
+		Version 1.03 (1.2.1.2)|x86 = Version 1.03 (1.2.1.2)|x86
+		Version 1.09 (1.2.4.1)|Any CPU = Version 1.09 (1.2.4.1)|Any CPU
+		Version 1.09 (1.2.4.1)|x64 = Version 1.09 (1.2.4.1)|x64
+		Version 1.09 (1.2.4.1)|x86 = Version 1.09 (1.2.4.1)|x86
+		XDK Release|Any CPU = XDK Release|Any CPU
+		XDK Release|x64 = XDK Release|x64
+		XDK Release|x86 = XDK Release|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{1AFFDFE4-EAF5-4198-9367-E71F49A0E327}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1AFFDFE4-EAF5-4198-9367-E71F49A0E327}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1AFFDFE4-EAF5-4198-9367-E71F49A0E327}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{1AFFDFE4-EAF5-4198-9367-E71F49A0E327}.Debug|x64.Build.0 = Debug|Any CPU
+		{1AFFDFE4-EAF5-4198-9367-E71F49A0E327}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{1AFFDFE4-EAF5-4198-9367-E71F49A0E327}.Debug|x86.Build.0 = Debug|Any CPU
+		{1AFFDFE4-EAF5-4198-9367-E71F49A0E327}.Initial Release|Any CPU.ActiveCfg = Initial Release|Any CPU
+		{1AFFDFE4-EAF5-4198-9367-E71F49A0E327}.Initial Release|Any CPU.Build.0 = Initial Release|Any CPU
+		{1AFFDFE4-EAF5-4198-9367-E71F49A0E327}.Initial Release|x64.ActiveCfg = Initial Release|Any CPU
+		{1AFFDFE4-EAF5-4198-9367-E71F49A0E327}.Initial Release|x64.Build.0 = Initial Release|Any CPU
+		{1AFFDFE4-EAF5-4198-9367-E71F49A0E327}.Initial Release|x86.ActiveCfg = Initial Release|Any CPU
+		{1AFFDFE4-EAF5-4198-9367-E71F49A0E327}.Initial Release|x86.Build.0 = Initial Release|Any CPU
+		{1AFFDFE4-EAF5-4198-9367-E71F49A0E327}.Patched Release|Any CPU.ActiveCfg = Patched Release|Any CPU
+		{1AFFDFE4-EAF5-4198-9367-E71F49A0E327}.Patched Release|Any CPU.Build.0 = Patched Release|Any CPU
+		{1AFFDFE4-EAF5-4198-9367-E71F49A0E327}.Patched Release|x64.ActiveCfg = Patched Release|Any CPU
+		{1AFFDFE4-EAF5-4198-9367-E71F49A0E327}.Patched Release|x64.Build.0 = Patched Release|Any CPU
+		{1AFFDFE4-EAF5-4198-9367-E71F49A0E327}.Patched Release|x86.ActiveCfg = Patched Release|Any CPU
+		{1AFFDFE4-EAF5-4198-9367-E71F49A0E327}.Patched Release|x86.Build.0 = Patched Release|Any CPU
+		{1AFFDFE4-EAF5-4198-9367-E71F49A0E327}.Version 1.01 (1.1.2+)|Any CPU.ActiveCfg = Version 1.01 (1.1.2+)|x64
+		{1AFFDFE4-EAF5-4198-9367-E71F49A0E327}.Version 1.01 (1.1.2+)|Any CPU.Build.0 = Version 1.01 (1.1.2+)|x64
+		{1AFFDFE4-EAF5-4198-9367-E71F49A0E327}.Version 1.01 (1.1.2+)|x64.ActiveCfg = Version 1.01 (1.1.2+)|Any CPU
+		{1AFFDFE4-EAF5-4198-9367-E71F49A0E327}.Version 1.01 (1.1.2+)|x64.Build.0 = Version 1.01 (1.1.2+)|Any CPU
+		{1AFFDFE4-EAF5-4198-9367-E71F49A0E327}.Version 1.01 (1.1.2+)|x86.ActiveCfg = Version 1.01 (1.1.2+)|Any CPU
+		{1AFFDFE4-EAF5-4198-9367-E71F49A0E327}.Version 1.01 (1.1.2+)|x86.Build.0 = Version 1.01 (1.1.2+)|Any CPU
+		{1AFFDFE4-EAF5-4198-9367-E71F49A0E327}.Version 1.03 (1.2.1.2)|Any CPU.ActiveCfg = Version 1.03 (1.2.1.2)|Any CPU
+		{1AFFDFE4-EAF5-4198-9367-E71F49A0E327}.Version 1.03 (1.2.1.2)|Any CPU.Build.0 = Version 1.03 (1.2.1.2)|Any CPU
+		{1AFFDFE4-EAF5-4198-9367-E71F49A0E327}.Version 1.03 (1.2.1.2)|x64.ActiveCfg = Version 1.03 (1.2.1.2)|Any CPU
+		{1AFFDFE4-EAF5-4198-9367-E71F49A0E327}.Version 1.03 (1.2.1.2)|x64.Build.0 = Version 1.03 (1.2.1.2)|Any CPU
+		{1AFFDFE4-EAF5-4198-9367-E71F49A0E327}.Version 1.03 (1.2.1.2)|x86.ActiveCfg = Version 1.03 (1.2.1.2)|Any CPU
+		{1AFFDFE4-EAF5-4198-9367-E71F49A0E327}.Version 1.03 (1.2.1.2)|x86.Build.0 = Version 1.03 (1.2.1.2)|Any CPU
+		{1AFFDFE4-EAF5-4198-9367-E71F49A0E327}.Version 1.09 (1.2.4.1)|Any CPU.ActiveCfg = Version 1.09 (1.2.4.1)|Any CPU
+		{1AFFDFE4-EAF5-4198-9367-E71F49A0E327}.Version 1.09 (1.2.4.1)|Any CPU.Build.0 = Version 1.09 (1.2.4.1)|Any CPU
+		{1AFFDFE4-EAF5-4198-9367-E71F49A0E327}.Version 1.09 (1.2.4.1)|x64.ActiveCfg = Version 1.09 (1.2.4.1)|Any CPU
+		{1AFFDFE4-EAF5-4198-9367-E71F49A0E327}.Version 1.09 (1.2.4.1)|x64.Build.0 = Version 1.09 (1.2.4.1)|Any CPU
+		{1AFFDFE4-EAF5-4198-9367-E71F49A0E327}.Version 1.09 (1.2.4.1)|x86.ActiveCfg = Version 1.09 (1.2.4.1)|Any CPU
+		{1AFFDFE4-EAF5-4198-9367-E71F49A0E327}.Version 1.09 (1.2.4.1)|x86.Build.0 = Version 1.09 (1.2.4.1)|Any CPU
+		{1AFFDFE4-EAF5-4198-9367-E71F49A0E327}.XDK Release|Any CPU.ActiveCfg = XDK Release|Any CPU
+		{1AFFDFE4-EAF5-4198-9367-E71F49A0E327}.XDK Release|Any CPU.Build.0 = XDK Release|Any CPU
+		{1AFFDFE4-EAF5-4198-9367-E71F49A0E327}.XDK Release|x64.ActiveCfg = XDK Release|Any CPU
+		{1AFFDFE4-EAF5-4198-9367-E71F49A0E327}.XDK Release|x64.Build.0 = XDK Release|Any CPU
+		{1AFFDFE4-EAF5-4198-9367-E71F49A0E327}.XDK Release|x86.ActiveCfg = XDK Release|Any CPU
+		{1AFFDFE4-EAF5-4198-9367-E71F49A0E327}.XDK Release|x86.Build.0 = XDK Release|Any CPU
+		{CE90D7D0-E9BC-42D3-8862-2E8EFA887D60}.Debug|Any CPU.ActiveCfg = Release|x64
+		{CE90D7D0-E9BC-42D3-8862-2E8EFA887D60}.Debug|Any CPU.Build.0 = Release|x64
+		{CE90D7D0-E9BC-42D3-8862-2E8EFA887D60}.Debug|x64.ActiveCfg = Release|x64
+		{CE90D7D0-E9BC-42D3-8862-2E8EFA887D60}.Debug|x64.Build.0 = Release|x64
+		{CE90D7D0-E9BC-42D3-8862-2E8EFA887D60}.Debug|x86.ActiveCfg = Release|x64
+		{CE90D7D0-E9BC-42D3-8862-2E8EFA887D60}.Debug|x86.Build.0 = Release|x64
+		{CE90D7D0-E9BC-42D3-8862-2E8EFA887D60}.Initial Release|Any CPU.ActiveCfg = Release|x64
+		{CE90D7D0-E9BC-42D3-8862-2E8EFA887D60}.Initial Release|Any CPU.Build.0 = Release|x64
+		{CE90D7D0-E9BC-42D3-8862-2E8EFA887D60}.Initial Release|x64.ActiveCfg = Release|x64
+		{CE90D7D0-E9BC-42D3-8862-2E8EFA887D60}.Initial Release|x64.Build.0 = Release|x64
+		{CE90D7D0-E9BC-42D3-8862-2E8EFA887D60}.Initial Release|x86.ActiveCfg = Release|x64
+		{CE90D7D0-E9BC-42D3-8862-2E8EFA887D60}.Initial Release|x86.Build.0 = Release|x64
+		{CE90D7D0-E9BC-42D3-8862-2E8EFA887D60}.Patched Release|Any CPU.ActiveCfg = Release|x64
+		{CE90D7D0-E9BC-42D3-8862-2E8EFA887D60}.Patched Release|Any CPU.Build.0 = Release|x64
+		{CE90D7D0-E9BC-42D3-8862-2E8EFA887D60}.Patched Release|x64.ActiveCfg = Release|x64
+		{CE90D7D0-E9BC-42D3-8862-2E8EFA887D60}.Patched Release|x64.Build.0 = Release|x64
+		{CE90D7D0-E9BC-42D3-8862-2E8EFA887D60}.Patched Release|x86.ActiveCfg = Release|x64
+		{CE90D7D0-E9BC-42D3-8862-2E8EFA887D60}.Patched Release|x86.Build.0 = Release|x64
+		{CE90D7D0-E9BC-42D3-8862-2E8EFA887D60}.Version 1.01 (1.1.2+)|Any CPU.ActiveCfg = Release|x64
+		{CE90D7D0-E9BC-42D3-8862-2E8EFA887D60}.Version 1.01 (1.1.2+)|Any CPU.Build.0 = Release|x64
+		{CE90D7D0-E9BC-42D3-8862-2E8EFA887D60}.Version 1.01 (1.1.2+)|x64.ActiveCfg = Release|x64
+		{CE90D7D0-E9BC-42D3-8862-2E8EFA887D60}.Version 1.01 (1.1.2+)|x64.Build.0 = Release|x64
+		{CE90D7D0-E9BC-42D3-8862-2E8EFA887D60}.Version 1.01 (1.1.2+)|x86.ActiveCfg = Release|x64
+		{CE90D7D0-E9BC-42D3-8862-2E8EFA887D60}.Version 1.01 (1.1.2+)|x86.Build.0 = Release|x64
+		{CE90D7D0-E9BC-42D3-8862-2E8EFA887D60}.Version 1.03 (1.2.1.2)|Any CPU.ActiveCfg = Release|x64
+		{CE90D7D0-E9BC-42D3-8862-2E8EFA887D60}.Version 1.03 (1.2.1.2)|Any CPU.Build.0 = Release|x64
+		{CE90D7D0-E9BC-42D3-8862-2E8EFA887D60}.Version 1.03 (1.2.1.2)|x64.ActiveCfg = Release|x64
+		{CE90D7D0-E9BC-42D3-8862-2E8EFA887D60}.Version 1.03 (1.2.1.2)|x64.Build.0 = Release|x64
+		{CE90D7D0-E9BC-42D3-8862-2E8EFA887D60}.Version 1.03 (1.2.1.2)|x86.ActiveCfg = Release|x64
+		{CE90D7D0-E9BC-42D3-8862-2E8EFA887D60}.Version 1.03 (1.2.1.2)|x86.Build.0 = Release|x64
+		{CE90D7D0-E9BC-42D3-8862-2E8EFA887D60}.Version 1.09 (1.2.4.1)|Any CPU.ActiveCfg = Release|x64
+		{CE90D7D0-E9BC-42D3-8862-2E8EFA887D60}.Version 1.09 (1.2.4.1)|Any CPU.Build.0 = Release|x64
+		{CE90D7D0-E9BC-42D3-8862-2E8EFA887D60}.Version 1.09 (1.2.4.1)|x64.ActiveCfg = Release|x64
+		{CE90D7D0-E9BC-42D3-8862-2E8EFA887D60}.Version 1.09 (1.2.4.1)|x64.Build.0 = Release|x64
+		{CE90D7D0-E9BC-42D3-8862-2E8EFA887D60}.Version 1.09 (1.2.4.1)|x86.ActiveCfg = Release|x64
+		{CE90D7D0-E9BC-42D3-8862-2E8EFA887D60}.Version 1.09 (1.2.4.1)|x86.Build.0 = Release|x64
+		{CE90D7D0-E9BC-42D3-8862-2E8EFA887D60}.XDK Release|Any CPU.ActiveCfg = Release|x64
+		{CE90D7D0-E9BC-42D3-8862-2E8EFA887D60}.XDK Release|Any CPU.Build.0 = Release|x64
+		{CE90D7D0-E9BC-42D3-8862-2E8EFA887D60}.XDK Release|x64.ActiveCfg = Release|x64
+		{CE90D7D0-E9BC-42D3-8862-2E8EFA887D60}.XDK Release|x64.Build.0 = Release|x64
+		{CE90D7D0-E9BC-42D3-8862-2E8EFA887D60}.XDK Release|x86.ActiveCfg = Release|x64
+		{CE90D7D0-E9BC-42D3-8862-2E8EFA887D60}.XDK Release|x86.Build.0 = Release|x64
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {71CA9346-A489-4148-8069-F07FBB92082B}
+	EndGlobalSection
+EndGlobal
