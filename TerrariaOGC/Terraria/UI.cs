@@ -6413,7 +6413,7 @@ namespace Terraria
 								using (MemoryStream memoryStream = new MemoryStream((int)stream.Length))
 								{
 									memoryStream.SetLength(stream.Length);
-									stream.Read(memoryStream.GetBuffer(), 0, (int)stream.Length);
+									stream.ReadExactly(memoryStream.GetBuffer(), 0, (int)stream.Length);
 									stream.Close();
 									using (BinaryReader binaryReader = new BinaryReader(memoryStream))
 									{

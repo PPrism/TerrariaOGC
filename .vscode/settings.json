@@ -1,0 +1,5 @@
+{
+    "cmake.ignoreCMakeListsMissing": true,
+    "csharp.debug.justMyCode": false,
+    "csharp.debug.logging.moduleLoad": false
+}

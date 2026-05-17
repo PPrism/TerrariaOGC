@@ -7,6 +7,8 @@
  */
 #endregion
 
+using System.Drawing;
+
 namespace Microsoft.Xna.Framework.GamerServices
 {
 	public sealed class GameDefaults

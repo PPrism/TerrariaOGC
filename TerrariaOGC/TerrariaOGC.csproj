@@ -1,87 +1,107 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
+
   <PropertyGroup>
-	<AssemblyName>TerrariaOGC</AssemblyName>
-	<GenerateAssemblyInfo>False</GenerateAssemblyInfo>
-	<OutputType>WinExe</OutputType>
-	<UseWindowsForms>True</UseWindowsForms>
-	<TargetFramework>net40</TargetFramework>
-	<PlatformTarget>x64</PlatformTarget>
-	<Configurations>Debug;Initial Release;Patched Release;Version 1.01 (1.1.2+);Version 1.03 (1.2.1.2);Version 1.09 (1.2.4.1);XDK Release</Configurations>
-	<Platforms>x64</Platforms>
+    <AssemblyName>TerrariaOGC</AssemblyName>
+    <GenerateAssemblyInfo>False</GenerateAssemblyInfo>
+    <OutputType>WinExe</OutputType>
+    <UseWindowsForms>True</UseWindowsForms>
+    <TargetFramework>net10.0-windows</TargetFramework>
+    <PlatformTarget>x64</PlatformTarget>
+    <Configurations>Debug;Initial Release;Patched Release;Version 1.01 (1.1.2+);Version 1.03 (1.2.1.2);Version 1.09 (1.2.4.1);XDK Release</Configurations>
+    <Platforms>x64</Platforms>
+    <LangVersion>7.3</LangVersion>
+    <AllowUnsafeBlocks>True</AllowUnsafeBlocks>
+    <PackageIcon>TerrariaOGC.png</PackageIcon>
+    <ApplicationIcon>TerrariaOGC.ico</ApplicationIcon>
   </PropertyGroup>
+
   <PropertyGroup>
-	<LangVersion>7.3</LangVersion>
-	<AllowUnsafeBlocks>True</AllowUnsafeBlocks>
-	<DebugType>pdbonly</DebugType>
-	<PackageIcon>TerrariaOGC.png</PackageIcon>
-	<BaseOutputPath>bin\</BaseOutputPath>
-	<ApplicationIcon>TerrariaOGC.ico</ApplicationIcon>
+    <NoWarn>CA1416,CS0162,SYSLIB0022,SYSLIB0006,CS0618</NoWarn>
   </PropertyGroup>
+
+  <ItemGroup>
+    <Content Include="..\FNANative\**\*.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      <TargetPath>%(Filename)%(Extension)</TargetPath>
+    </Content>
+  </ItemGroup>
+
+  <ItemGroup>
+    <Content Include="..\Content\**">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      <TargetPath>Content\%(RecursiveDir)%(Filename)%(Extension)</TargetPath>
+    </Content>
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Newtonsoft.Json" Version="13.0.4" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Content Include="TerrariaOGC.ico" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\FNA\FNA.Core.csproj">
+      <Private>True</Private>
+    </ProjectReference>
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\FNAStubs\FNAStubs.csproj"></ProjectReference>
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Update="TerrariaOGC.png">
+      <Pack>True</Pack>
+      <PackagePath>\</PackagePath>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
-	<Optimize>False</Optimize>
-	<DebugType>portable</DebugType>
-	<DebugSymbols>true</DebugSymbols>
-	<OutputPath>bin\Debug\</OutputPath>
-	<ErrorReport>prompt</ErrorReport>
-	<WarningLevel>4</WarningLevel>
-	<DefineConstants>$(DefineConstants);VERSION_101</DefineConstants>
+    <Optimize>False</Optimize>
+    <DebugType>portable</DebugType>
+    <DebugSymbols>true</DebugSymbols>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <DefineConstants>$(DefineConstants);VERSION_101</DefineConstants>
   </PropertyGroup>
+
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Initial Release|x64'">
-	<DefineConstants>$(DefineConstants);VERSION_INITIAL</DefineConstants>
-	<Optimize>True</Optimize>
-	<WarningLevel>4</WarningLevel>
+    <DefineConstants>$(DefineConstants);VERSION_INITIAL</DefineConstants>
+    <Optimize>True</Optimize>
+    <WarningLevel>4</WarningLevel>
   </PropertyGroup>
+
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Patched Release|x64'">
-	<DefineConstants>$(DefineConstants);VERSION_INITIAL;IS_PATCHED</DefineConstants>
-	<Optimize>True</Optimize>
-	<WarningLevel>4</WarningLevel>
+    <DefineConstants>$(DefineConstants);VERSION_INITIAL;IS_PATCHED</DefineConstants>
+    <Optimize>True</Optimize>
+    <WarningLevel>4</WarningLevel>
   </PropertyGroup>
+
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Version 1.01 (1.1.2+)|x64'">
-	<DefineConstants>$(DefineConstants);VERSION_101</DefineConstants>
-	<Optimize>True</Optimize>
-	<WarningLevel>4</WarningLevel>
+    <DefineConstants>$(DefineConstants);VERSION_101</DefineConstants>
+    <Optimize>True</Optimize>
+    <WarningLevel>4</WarningLevel>
   </PropertyGroup>
+
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Version 1.03 (1.2.1.2)|x64'">
-	<DefineConstants>$(DefineConstants);VERSION_103</DefineConstants>
-	<Optimize>True</Optimize>
-	<WarningLevel>4</WarningLevel>
+    <DefineConstants>$(DefineConstants);VERSION_103</DefineConstants>
+    <Optimize>True</Optimize>
+    <WarningLevel>4</WarningLevel>
   </PropertyGroup>
+
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Version 1.09 (1.2.4.1)|x64'">
-	<DefineConstants>$(DefineConstants);VERSION_FINAL</DefineConstants>
-	<Optimize>True</Optimize>
-	<WarningLevel>4</WarningLevel>
+    <DefineConstants>$(DefineConstants);VERSION_FINAL</DefineConstants>
+    <Optimize>True</Optimize>
+    <WarningLevel>4</WarningLevel>
   </PropertyGroup>
+
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='XDK Release|x64'">
-	<DefineConstants>$(DefineConstants);USE_ORIGINAL_CODE;VERSION_INITIAL</DefineConstants>
-	<Optimize>True</Optimize>
-	<WarningLevel>4</WarningLevel>
+    <DefineConstants>$(DefineConstants);USE_ORIGINAL_CODE;VERSION_INITIAL</DefineConstants>
+    <Optimize>True</Optimize>
+    <WarningLevel>4</WarningLevel>
   </PropertyGroup>
-  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
-  <ItemGroup>
-	<Compile Remove="Dependencies\**" />
-	<EmbeddedResource Remove="Dependencies\**" />
-	<None Remove="Dependencies\**" />
-  </ItemGroup>
-  <ItemGroup>
-	<None Remove="Terraria\Player.cs.bak" />
-	<None Remove="Terraria\Projectile.cs.bak" />
-  </ItemGroup>
-  <ItemGroup>
-	<Content Include="TerrariaOGC.ico" />
-  </ItemGroup>
-  <ItemGroup>
-	<PackageReference Include="Newtonsoft.Json" Version="13.0.3" />
-  </ItemGroup>
-  <ItemGroup>
-	<ProjectReference Include="..\FNA\FNA.NetFramework.csproj">
-	  <Private>True</Private>
-	</ProjectReference>
-  </ItemGroup>
-  <ItemGroup>
-	<None Update="TerrariaOGC.png">
-	  <Pack>True</Pack>
-	  <PackagePath>\</PackagePath>
-	  <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-	</None>
-  </ItemGroup>
+
 </Project>

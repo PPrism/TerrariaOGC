@@ -1,0 +1,22 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net10.0-windows</TargetFramework>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+    <OutputType>library</OutputType>
+    <UseWindowsForms>true</UseWindowsForms>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\FNA\FNA.Core.csproj"></ProjectReference>
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="SpaceWizards.Lidgren.Network" Version="0.3.1" />
+  </ItemGroup>
+
+  <PropertyGroup>
+    <NoWarn>CS0649,SYSLIB0051</NoWarn>
+  </PropertyGroup>
+
+</Project>

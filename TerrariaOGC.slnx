@@ -1,0 +1,22 @@
+<Solution>
+  <Configurations>
+    <BuildType Name="Debug" />
+    <BuildType Name="Initial Release" />
+    <BuildType Name="Patched Release" />
+    <BuildType Name="Version 1.01 (1.1.2+)" />
+    <BuildType Name="Version 1.03 (1.2.1.2)" />
+    <BuildType Name="Version 1.09 (1.2.4.1)" />
+    <BuildType Name="XDK Release" />
+    <Platform Name="x64" />
+  </Configurations>
+  <Project Path="FNA/FNA.Core.csproj">
+    <BuildType Project="Release" />
+    <Platform Project="x64" />
+  </Project>
+  <Project Path="FNAStubs/FNAStubs.csproj">
+    <Platform Project="x64" />
+  </Project>
+  <Project Path="TerrariaOGC/TerrariaOGC.csproj">
+    <Platform Project="x64" />
+  </Project>
+</Solution>

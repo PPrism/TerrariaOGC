@@ -9,6 +9,8 @@
 
 #region Using Statements
 using System.IO;
+using System.Drawing;
+using System.Numerics;
 #endregion
 
 namespace Microsoft.Xna.Framework.Net
@@ -61,7 +63,7 @@ namespace Microsoft.Xna.Framework.Net
 			base.Write(value.A);
 		}
 
-		public void Write(Matrix value)
+		public void Write(Matrix4x4 value)
 		{
 			base.Write(value.M11);
 			base.Write(value.M12);

@@ -1585,7 +1585,7 @@ namespace Terraria
 			using (MemoryStream memoryStream = new MemoryStream((int)file.Length))
 			{
 				memoryStream.SetLength(file.Length);
-				file.Read(memoryStream.GetBuffer(), 0, (int)file.Length);
+				file.ReadExactly(memoryStream.GetBuffer(), 0, (int)file.Length);
 				file.Close();
 				using (BinaryReader binaryReader = new BinaryReader(memoryStream))
 				{
